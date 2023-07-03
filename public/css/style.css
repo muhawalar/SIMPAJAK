@@ -8282,6 +8282,9 @@ textarea.is-invalid.tt-hint {
 .mt-5 {
   margin-top: 3rem !important; }
 
+.mt-6 {
+    margin-top: 5rem !important; }  
+
 .mt-auto {
   margin-top: auto !important; }
 
@@ -14425,9 +14428,9 @@ dl {
                 margin-left: 0;
                 margin-right: .25rem; }
         .sidebar .nav .nav-item .nav-link .menu-title {
-          color: inherit;
+          color: #ffffff;
           display: inline-block;
-          font-size: 0.937rem;
+          font-size: 1.2rem;
           line-height: 1;
           vertical-align: middle; }
         .sidebar .nav .nav-item .nav-link .badge {
@@ -14555,10 +14558,10 @@ dl {
       .sidebar .nav.sub-menu .nav-item {
         padding: 0; }
         .sidebar .nav.sub-menu .nav-item .nav-link {
-          color: #888;
+          color: #ffffff;
           padding: 0.75rem 2rem 0.75rem 2rem;
           position: relative;
-          font-size: 0.8125rem;
+          font-size: 1.0rem;
           line-height: 1;
           height: auto;
           border-top: 0; }
@@ -14600,7 +14603,7 @@ dl {
         .sidebar-light .sidebar .nav .nav-item .nav-link i.menu-arrow:before {
           color: inherit; }
     .sidebar-light .sidebar .nav .nav-item .nav-link .menu-title {
-      color: inherit; }
+      color: #ffffff }
     .sidebar-light .sidebar .nav .nav-item .nav-link .icon-bg {
       background: rgba(0, 0, 0, 0.12); }
   .sidebar-light .sidebar .nav .nav-item.active {
