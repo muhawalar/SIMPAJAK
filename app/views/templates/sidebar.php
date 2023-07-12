@@ -70,7 +70,7 @@
                 <ul class="nav">
                     <li class="nav-item nav-category mt-5 mb-6">Utama</li>
                     <li class="nav-item mb-2 mt-3">
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link" href="<?=BASEURL;?>">
                             <span class="icon-bg"><i class="mdi mdi-cube menu-icon"></i></span>
                             <span class="menu-title">Dashboard</span>
                         </a>
@@ -84,12 +84,9 @@
                         </a>
                         <div class="collapse" id="ui-basic">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Wajib
-                                        Pajak</a></li>
-                                <li class="nav-item"> <a class="nav-link"
-                                        href="pages/ui-features/dropdowns.html">Pembayaran</a></li>
-                                <li class="nav-item"> <a class="nav-link"
-                                        href="pages/ui-features/typography.html">Tunggakan</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="<?=BASEURL;?>/WajibPajak/index.php">Wajib Pajak</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="<?=BASEURL;?>/Notifications/index.php">Notifikasi</a></li>
+                            
                             </ul>
                         </div>
                     </li>
