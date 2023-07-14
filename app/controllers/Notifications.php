@@ -7,6 +7,10 @@ class Notifications extends Controller{
         $this->view('notifications/index');
         $this->view('templates/footer');
     }
+
+    public function api(){
+        $this->view('notifications/api');
+    }
 }
 
 ?>

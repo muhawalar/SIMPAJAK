@@ -1,31 +1,35 @@
-<?php 
-$token = "fEvm!Mip5hbPzDeg-sfM";
-$target = "6289526293221" ;
+<?php
 
 
+$params=array(
+'token' => 'wciuqxangcor7rw7',
+'to' => '+6289526293221',
+'body' => 'WhatsApp API on UltraMsg.com works good'
+);
 $curl = curl_init();
-
 curl_setopt_array($curl, array(
-  CURLOPT_URL => 'https://api.fonnte.com/send',
+  CURLOPT_URL => "https://api.ultramsg.com/instance54318/messages/chat",
   CURLOPT_RETURNTRANSFER => true,
-  CURLOPT_ENCODING => '',
+  CURLOPT_ENCODING => "",
   CURLOPT_MAXREDIRS => 10,
-  CURLOPT_TIMEOUT => 0,
-  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_TIMEOUT => 30,
+  CURLOPT_SSL_VERIFYHOST => 0,
+  CURLOPT_SSL_VERIFYPEER => 0,
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST => 'POST',
-  CURLOPT_POSTFIELDS => array(
-'target' => $target,
-'message' => 'test aplikasi',
-),
+  CURLOPT_CUSTOMREQUEST => "POST",
+  CURLOPT_POSTFIELDS => http_build_query($params),
   CURLOPT_HTTPHEADER => array(
-    "Authorization: $token"
+    "content-type: application/x-www-form-urlencoded"
   ),
 ));
 
 $response = curl_exec($curl);
+$err = curl_error($curl);
 
 curl_close($curl);
-echo $response;
 
-?>
+if ($err) {
+  echo "cURL Error #:" . $err;
+} else {
+  echo $response;
+}

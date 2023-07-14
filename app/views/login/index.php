@@ -20,18 +20,16 @@
 					<div class="card fat" style="padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 20px;">
 						<div class="card-body">
 							<h4 class="card-title">Login</h4>
-							<form method="POST" class="my-login-validation" novalidate="">
+							<form method="POST" action="<?=BASEURL?>/Login/login">
 								<div class="form-group mt-4">
-									<label for="email">Username</label>
-									<input id="text"  class="form-control" name="email" value="" required autofocus>
+									<label for="username">Username</label>
+									<input id="username"  class="form-control" name="username" value="" required autofocus>
 									<div class="invalid-feedback">
 										Username is invalid
 									</div>
 								</div>
-
 								<div class="form-group">
 									<label for="password">Password
-										
 									</label>
 									<input id="password" type="password" class="form-control" name="password" required data-eye>
 								    <div class="invalid-feedback">

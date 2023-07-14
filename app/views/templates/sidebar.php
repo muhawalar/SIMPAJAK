@@ -46,7 +46,7 @@
                             </div>
                             <div class="p-2">
                                 <a class="dropdown-item py-1 d-flex align-items-center justify-content-between"
-                                    href="#">
+                                    href="<?=BASEURL?>/Login/logout">
                                     <span>Log Out</span>
                                     <i class="mdi mdi-logout ms-1"></i>
                                 </a>
