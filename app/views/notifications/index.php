@@ -15,19 +15,19 @@
                   <div class="row mb-2 mt-4">
                       <div class="col">
                           <div class="form-outline">
-                              <label class="form-label" for="form6Example1">Pilih Status Perusahaan</label>
+                              <label class="form-label" for="form6Example1">Status Wajib Pajak</label>
                               <select id="form6Example1" class="form-control input-group"
                                   style="height: 50px; display: flex; align-items: center;">
-                                  <option value="">Pilih Status Perusahaan</option>
-                                  <option value="Perusahaan A">Terdaftar</option>
-                                  <option value="Perusahaan B">Jatuh Tempo</option>
-                                  <option value="Perusahaan C">Lunas</option>
+                                  <option value="">Pilih Status</option>
+                                  <option value="Perusahaan A">Lunas</option>
+                              <option value="Perusahaan B">Tertunggak</option>
+                              <option value="Perusahaan B">Belum Lunas</option> 
                               </select>
                           </div>
                       </div>
                       <div class="col">
                           <div class="form-outline">
-                              <label class="form-label" for="form6Example2">Jumlah Perusahaan</label>
+                              <label class="form-label" for="form6Example2">Jumlah Wajib Pajak</label>
                               <input type="text" id="form6Example2" class="form-control input-normal" readonly />
                           </div>
 
@@ -38,10 +38,6 @@
                       <label class="form-label" for="form6Example3">Pesan</label>
                       <textarea id="form6Example3" class="form-control input-normal" rows="5"></textarea>
                   </div>
-
-
-
-
                   <!-- Submit button -->
                   <button type="submit" class="btn btn-secondary btn-lg mt-4 float-end">Kirim</button>
               </form>

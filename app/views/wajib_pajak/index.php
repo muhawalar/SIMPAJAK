@@ -15,7 +15,7 @@
                   <div class="row mb-2 mt-4">
                       <div class="col">
                           <div class="form-outline">
-                              <label class="form-label" for="form6Example1">Nama Perusahaan</label>
+                              <label class="form-label" for="form6Example1">Nama Wajib Pajak</label>
                               <input type="text" id="form6Example1" class="form-control input-normal" />
                           </div>
                       </div>
@@ -28,49 +28,60 @@
                   </div>
 
                   <!-- Text input -->
-                  <div class="form-outline mb-2">
-                      <label class="form-label" for="form6Example3">Alamat Perusahaan</label>
-                      <input type="text" id="form6Example3" class="form-control input-normal" />
+                  <div class="col">
+                      <div class="form-outline">
+                          <label class="form-label" for="form6Example1">Jenis Pajak</label>
+                          <select id="form6Example1" class="form-control input-group"
+                              style="height: 50px; display: flex; align-items: center;">
+                              <option value="">Pilih Jenis Pajak</option>
+                              <option value="Perusahaan A">Pajak Penghasilan (PPh)</option>
+                              <option value="Perusahaan B">Pajak Pertambahan Nilai (PPN)</option>
+                              <option value="Perusahaan B">Pajak Penjualan atas Barang Mewah (PPnBM)</option>
+                              <option value="Perusahaan C">Bea Materai</option>
+                              <option value="Perusahaan C">Pajak Bumi dan Bangunan</option>
+                          </select>
+                      </div>
                   </div>
                   <div class="row mb-2 mt-4">
                       <div class="col">
                           <div class="form-outline">
-                              <label class="form-label" for="form6Example1">Luas Bumi</label>
-                              <div class="input-group">
-                                  <input type="text" id="form6Example1" class="form-control input-normal" />
-                                  <div class="input-group-append">
-                                      <span class="input-group-text">m&#x00B2;</span>
-                                  </div>
-                              </div>
+                              <label class="form-label" for="form6Example1">Periode Pembukuan</label>
+                              <input type="date" id="form6Example1" class="form-control input-normal" />
                           </div>
+                      </div>
+                      <div class="col align-items-center mt-5" style=" margin-right: -320px;">
+                          <span>s.d.</span>
                       </div>
                       <div class="col">
-                          <div class="form-outline">
-                              <label class="form-label" for="form6Example2">Luas Bangunan</label>
-                              <div class="input-group">
-                                  <input type="text" id="form6Example2" class="form-control input-normal" />
-                                  <div class="input-group-append">
-                                      <span class="input-group-text">m&#x00B2;</span>
-                                  </div>
-                              </div>
+                          <div class="form-outline " style="margin-top: 30px;">
+                              <!-- <label class="form-label" for="form6Example1">Periode Pembukuan</label> -->
+                              <input type="date" id="form6Example2" class="form-control input-normal mt-3" />
                           </div>
                       </div>
-
                   </div>
 
                   <div class="row mb-2 mt-4">
                       <div class="col">
                           <div class="form-outline">
-                              <label class="form-label" for="form6Example1">Kode Pos</label>
-                              <input type="text" id="form6Example1" class="form-control input-normal" />
+                              <label class="form-label" for="form6Example1">Alamat</label>
+                              <div class="input-group">
+
+                                  <textarea id="form6Example3" class="form-control input-normal" rows="5"></textarea>
+
+
+                              </div>
                           </div>
                       </div>
+                  </div>
+
+                  <div class="row mb-2 mt-4">
+                      
                       <div class="col">
                           <div class="form-outline">
                               <label class="form-label" for="form6Example2">No HP</label>
                               <div class="input-group">
                                   <div class="input-group-prepend">
-                                      <span class="input-group-text">+62</span>
+                                      <span class="input-group-text">Rp.</span>
                                   </div>
                                   <input type="text" id="form6Example2" class="form-control input-normal" />
                               </div>
@@ -78,11 +89,17 @@
 
                       </div>
                       <div class="col">
-                          <div class="form-outline">
-                              <label class="form-label" for="form6Example3">Pekerjaan</label>
-                              <input type="text" id="form6Example3" class="form-control input-normal" />
+                      <div class="form-outline">
+                              <label class="form-label" for="form6Example1">Status Wajib Pajak</label>
+                              <select id="form6Example1" class="form-control input-group"
+                                  style="height: 50px; display: flex; align-items: center;">
+                                  <option value="">Pilih Status</option>
+                                  <option value="Perusahaan A">Lunas</option>
+                              <option value="Perusahaan B">Tertunggak</option>
+                              <option value="Perusahaan B">Belum Lunas</option> 
+                              </select>
                           </div>
-                      </div>
+                  </div>
                   </div>
 
                   <!-- Submit button -->
