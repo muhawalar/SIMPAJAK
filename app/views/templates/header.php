@@ -21,5 +21,10 @@
     <link rel="stylesheet" href="<?=BASEURL;?>/css/style.css">
     <!-- End layout styles -->
     <link rel="shortcut icon" href="<?=BASEURL;?>/images/favicon.png" />
+    <link href="https://cdn.datatables.net/1.13.5/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/dataTables.bootstrap5.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"> -->
+    
+
 
   </head>
