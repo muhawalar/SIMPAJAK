@@ -91,7 +91,7 @@
                         </div>
                     </li>
                     <li class="nav-item mb-2 mt-3">
-                        <a class="nav-link" href="pages/icons/mdi.html">
+                        <a class="nav-link" href="<?=BASEURL;?>/Laporan/index.php">
                             <span class="icon-bg"><i class="mdi mdi-file-document menu-icon"></i></span>
                             <span class="menu-title">Laporan</span>
                         </a>

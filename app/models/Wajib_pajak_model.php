@@ -25,6 +25,13 @@ class Wajib_pajak_model{
         $this->db->bind('update_at', $updated_at);
         $this->db->execute();
     }
+
+    public function getWajibPajakData(){
+        $this->db->query('SELECT id_wajib_pajak, nama_wajib_pajak, npwp, (SELECT nama_jenis_usaha FROM mst_jenis_pajak WHERE trx_wajib_pajak.id_jenis_usaha = mst_jenis_pajak.id_jenis_usaha) 
+        as jenis_pajak, mulai_periode, berakhir_periode, alamat, no_telp, (SELECT nama_status FROM mst_status WHERE trx_wajib_pajak.id_status = mst_status.id_status) 
+        as status, update_at FROM trx_wajib_pajak');
+        return $this->db->resultSet();
+    }   
 }
 
 ?>

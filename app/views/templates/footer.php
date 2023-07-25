@@ -28,5 +28,8 @@
     <!-- Custom js for this page -->
     <script src="<?=BASEURL;?>/js/dashboard.js"></script>
     <!-- End custom js for this page -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.5/js/dataTables.bootstrap5.min.js"></script>
   </body>
 </html>
