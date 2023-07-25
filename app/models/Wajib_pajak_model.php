@@ -10,6 +10,7 @@ class Wajib_pajak_model{
 
     public function addWajibPajak($nama_wajib_pajak, $npwp, $jenis_usaha, $mulai_periode, $berakhir_periode, $alamat, $no_telp, $status, $updated_at){
         $id_wajib_pajak = '';
+        $formatted_no_telp = "+62$no_telp";
 
         $query = "INSERT INTO " . $this->table . " VALUES (:id_wajib_pajak, :nama_wajib_pajak, :npwp, :id_jenis_usaha, :mulai_periode, :berakhir_periode, :alamat, :no_telp, :status, :update_at)";
         $this->db->query($query);
@@ -20,7 +21,7 @@ class Wajib_pajak_model{
         $this->db->bind('mulai_periode', $mulai_periode);
         $this->db->bind('berakhir_periode', $berakhir_periode);
         $this->db->bind('alamat', $alamat);
-        $this->db->bind('no_telp', $no_telp);
+        $this->db->bind('no_telp', $formatted_no_telp);
         $this->db->bind('status', $status);
         $this->db->bind('update_at', $updated_at);
         $this->db->execute();
@@ -55,6 +56,7 @@ class Wajib_pajak_model{
     }
     
     
-}
+    }   
+
 
 ?>

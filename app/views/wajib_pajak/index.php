@@ -77,7 +77,7 @@
                               <label class="form-label" for="no_telp">No HP</label>
                               <div class="input-group">
                                   <div class="input-group-prepend">
-                                      <span class="input-group-text">Rp.</span>
+                                      <span class="input-group-text">+62</span>
                                   </div>
                                   <input type="text" id="no_telp" name="no_telp" class="form-control input-normal" />
                               </div>

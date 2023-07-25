@@ -34,5 +34,6 @@ curl_close($curl);
 if ($err) {
   echo "cURL Error #:" . $err;
 } else {
-  header("Location:".BASEURL."/Notifications/index");
+  // header("Location:".BASEURL."/Notifications/index");
+  echo $response;
 }
