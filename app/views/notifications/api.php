@@ -1,10 +1,13 @@
+
 <?php
 
+$to = $_POST['no_telp'];
+$body = $_POST['pesan'];
 
 $params=array(
 'token' => 'wciuqxangcor7rw7',
-'to' => '+6289526293221',
-'body' => 'WhatsApp API on UltraMsg.com works good'
+'to' => $to,
+'body' => $body
 );
 $curl = curl_init();
 curl_setopt_array($curl, array(
@@ -31,5 +34,6 @@ curl_close($curl);
 if ($err) {
   echo "cURL Error #:" . $err;
 } else {
+  // header("Location:".BASEURL."/Notifications/index");
   echo $response;
 }

@@ -24,6 +24,7 @@
     <script src="<?=BASEURL;?>/js/off-canvas.js"></script>
     <script src="<?=BASEURL;?>/js/hoverable-collapse.js"></script>
     <script src="<?=BASEURL;?>/js/misc.js"></script>
+    <script src="<?=BASEURL;?>/js/data-tables.js"></script>
     <!-- endinject -->
     <!-- Custom js for this page -->
     <script src="<?=BASEURL;?>/js/dashboard.js"></script>
@@ -31,5 +32,29 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.5/js/dataTables.bootstrap5.min.js"></script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    updateFields();
+  });
+</script>
+<script>
+function updateFields() {
+  const select = document.getElementById("nama_wajib_pajak");
+  const selectedOption = select.options[select.selectedIndex];
+  const phoneNumber = selectedOption.getAttribute("data-to");
+  const optionText = selectedOption.textContent;
+  document.getElementById("no_telp").value = phoneNumber;
+    // Create an AJAX request to send the 'to' value to the controller
+  const xhr = new XMLHttpRequest();
+  xhr.open("POST", "<?=BASEURL ?>/Notifications/api", true);
+  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhr.send("to=" + phoneNumber);
+}
+
+document.getElementById("nama_wajib_pajak").addEventListener("change", updateFields);
+</script>
+
+
+
   </body>
 </html>
